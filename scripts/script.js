@@ -85,19 +85,21 @@ result = num1 % num2;
 document.write('<br/> ' + num1 + '%' + num2 + '= ' + result + '<br/>');
 */
 // Area of various shapes
+/*
 var base = parseFloat(prompt('Enter Base = '));
 var height = parseFloat(prompt('Enter height = '));
 var areaOfTriangle = 0.5 * base * height;
 var areaOfRectriangle = base * height;
 document.write('<br/> Area Of Triangle =  ' + areaOfTriangle);
 document.write('<br/> Area Of Triangle =  ' + areaOfRectriangle);
+*/
 
 // temperature converter
-var farhren = parseFloat(prompt('Enter Temperature = '));
-var cels = parseFloat(prompt('Enter Celsius = '));
-var cels = (farhren - 32) * (5 / 9);
-var farhren = cels * (9 / 5) + 32;
-document.write('<br/> Fahrenheight = ' + farhren);
+// var farhren = parseFloat(prompt('Enter Temperature = '));
+// var cels = parseFloat(prompt('Enter Celsius = '));
+// var cels = (farhren - 32) * (5 / 9);
+// var farhren = cels * (9 / 5) + 32;
+// document.write('<br/> Fahrenheight = ' + farhren);
 
 //Relational Operator -> >,<, >=, <=, ==, ===, !=( to check value), !==(to check data type)
 // Logical Operator -> &&, ||, !
