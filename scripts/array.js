@@ -78,3 +78,45 @@ numbers.sort(function (a, b) {
     return b - a;
 });
 console.log('numbweights', numbers);
+
+//// 1D array
+// function heighstScore(score) {
+//     var max = score[0];
+
+//     for (var i = 0; i < score.length; i++) {
+//         if (max < score[i]) {
+//             max = score[i];
+//         }
+//     }
+//     return max;
+// }
+// var scores = [40, 50, 60, 10, 20, 30];
+// var maxValue = heighstScore(scores);
+// console.log('maxValue', maxValue);
+
+//// 2D array
+
+function heighstRunScorer(scores) {
+    var heightScorer = scores[0][0];
+    var heightScore = scores[0][1];
+    for (var i = 0; i < scores.length; i++) {
+        for (var j = 0; j < scores[i].length; j++) {
+            if (heightScore < scores[i][j]) {
+                // heightScorer = scores[i][j];
+                heightScore = scores[i][j];
+            }
+        }
+    }
+    console.log('heightScore = ', heightScore);
+    // console.log('heightScorer = ', heightScore[i][j]);
+}
+var playersInfo = [
+    ['Ashrafu', 95],
+    ['Sakib', 75],
+    ['Mushfiq', 30],
+    ['Mahamudullah', 45],
+    ['Mashrafee', 13],
+];
+// console.log(playersInfo[4][1]);
+
+heighstRunScorer(playersInfo);
