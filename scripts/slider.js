@@ -39,3 +39,4 @@ function add() {
 function remove() {
     para.classList.remove('para-style');
 }
+

@@ -27,3 +27,16 @@
     font-style: italic;
     font-size: 40px;
 }
+
+.mouse-over {
+    color: #f00;
+}
+.audio-button {
+    background-color: aquamarine;
+    color: #000;
+    padding: 10px 20px;
+}
+.anim {
+    box-shadow: 0 15px 18px tomato;
+    opacity: 0.5;
+}
