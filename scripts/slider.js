@@ -27,3 +27,15 @@ function prev() {
     }
     img.src = photos[count];
 }
+
+/////Style Change
+var para = document.querySelector('#para');
+function add() {
+    // para.style.color = '#f00';
+    // para.style.fontStyle = 'italic';
+    // para.style.fontSize = '42px';
+    para.classList.add('para-style');
+}
+function remove() {
+    para.classList.remove('para-style');
+}

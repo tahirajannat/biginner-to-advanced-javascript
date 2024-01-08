@@ -22,3 +22,8 @@
     color: #fff;
     padding: 5px;
 }
+.para-style {
+    color: red;
+    font-style: italic;
+    font-size: 40px;
+}
