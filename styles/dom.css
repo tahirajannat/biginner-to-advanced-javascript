@@ -1,0 +1,10 @@
+div {
+    background-color: tomato;
+    height: 12rem;
+    width: 12rem;
+}
+.dragDrop {
+    margin-top: 20px;
+    height: 20rem;
+    width: 20rem;
+}
