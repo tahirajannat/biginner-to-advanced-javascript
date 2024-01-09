@@ -54,11 +54,25 @@ for (var i = 0; i < 3; i++) {
             var text = this.innerHTML;
             var newText = this.className;
             audioPlay(text);
-            playAnim(newText);
+            // playAnim(newText);
         });
-
-    console.log('first', myButton);
+    var buttonClass = ['a', 'b', 'c'][i];
+    document.querySelector('.audio-button.' + buttonClass).addEventListener(
+        'click',
+        (function (classValue) {
+            return function () {
+                playAnim(classValue);
+            };
+        })(buttonClass)
+    );
 }
+//Kyepress listener
+document.addEventListener('keypress', function (event) {
+    var keyText = event.key;
+    audioPlay(keyText);
+    playAnim(keyText);
+});
+
 function audioPlay(text) {
     switch (text) {
         case 'Button a':
@@ -80,10 +94,26 @@ function audioPlay(text) {
             break;
     }
 }
+
 function playAnim(text) {
-    var selectedBtn = document.querySelector('.' + text);
+    var selectedBtn = document.querySelector('.audio-button.' + text);
     selectedBtn.classList.add('anim');
     setTimeout(function () {
         selectedBtn.classList.remove('anim');
     }, 1000);
 }
+
+///key press simple example
+
+document.addEventListener('keypress', function (event) {
+    var text = event.key;
+    document.querySelector('p').innerHTML = 'You have pressed ' + text;
+});
+var count = 0;
+document
+    .querySelector('textarea')
+    .addEventListener('keypress', function (event) {
+        count++;
+        var text = event.key;
+        document.querySelector('h4').innerHTML = 'You have pressed ' + count;
+    });

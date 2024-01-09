@@ -40,3 +40,13 @@
     box-shadow: 0 15px 18px tomato;
     opacity: 0.5;
 }
+.checkDiv label {
+    margin-top: 10px;
+    display: block;
+}
+.checkDiv {
+    margin-top: 20px;
+}
+div {
+    margin-top: 20px;
+}

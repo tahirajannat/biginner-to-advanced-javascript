@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/styles/style.css" />
+    </head>
+    <body>
+        <label for="name">Name: </label>
+        <input id="name-input" type="text" name="name" />
+        <!-- Checkbox  -->
+
+        <div class="checkDiv">
+            <label for="c"
+                ><input type="checkbox" name="program" id="" value="c" />C
+            </label>
+            <label for="cplus"
+                ><input type="checkbox" name="program" id="" value="cplus" />C++
+            </label>
+            <label for="java"
+                ><input type="checkbox" name="program" id="" value="java" />Java
+            </label>
+            <label for="javascript"
+                ><input
+                    type="checkbox"
+                    name="program"
+                    id=""
+                    value="javascript"
+                />JavaScript
+            </label>
+        </div>
+
+        <!-- select  -->
+        <div class="checkDiv">
+            <label for="department"> Department: </label>
+            <select name="department" id="department">
+                <option value="" selected>Select Option</option>
+                <option value="cse">CSE</option>
+                <option value="eee">EEE</option>
+                <option value="llb">LLB</option>
+                <option value="bba">BBA</option>
+            </select>
+        </div>
+
+        <div class="">
+            <form action="" method="get">
+                <div>
+                    <label for="name"
+                        >Name:
+                        <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            required
+                            autofocus
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label for="email"
+                        >Email:
+                        <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            required
+                            size="30"
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label for="password"
+                        >Password:
+                        <input
+                            id="password"
+                            type="password"
+                            name="password"
+                            required
+                            minlength="4"
+                            maxlength="8"
+                        />
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="signup" />
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <video width="400" controls>
+                <source
+                    src="videos/Marvel Studios’ I Am Groot S1 E4_ Groot Takes a Bath.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support html% video elemnt
+            </video>
+        </div>
+        <div>
+            <details>
+                <summary>Tahira</summary>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Fugit hic consequuntur ab ullam repellat corrupti asperiores
+                    ipsum, praesentium laboriosam obcaecati sequi minus iure
+                    quae veniam recusandae molestias voluptatem nihil voluptas?
+                </p>
+            </details>
+        </div>
+
+        <script src="./scripts/events.js"></script>
+    </body>
+</html>
