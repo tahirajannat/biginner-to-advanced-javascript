@@ -1,35 +1,47 @@
+// y = 11;
+// console.log('var', y);
+// var y;
+// x = 11;
+// console.log('let', x);
+// let x;
+// z = 11;
+// console.log('const', z);
+// const z = 20;
+
 // let x = 11;
 // if (true) {
 //     x = 10;
 // }
 // console.log('let', x);
 
-// // const y = 11;
-// // if (true) {
-// //     y = 10;
-// // }
-// // console.log('const', y);
+// const y = 11;
+// if (true) {
+//     y = 10;
+// }
+// console.log('const', y);
 
-// let a = 20;
-// let b = 30;
-// var sum = a + b;
+let a = 20;
+let b = 30;
+var sum = a + b;
 
-// let name = 'Tahira Jannat';
-// let message = `I am ${name}. I am learning javascript`;
-// console.log(message);
+let name = 'Tahira Jannat';
+let message = `I am ${name}. I am learning javascript`;
+console.log(message);
 
 // ///ES6 function
 
-// // function add(x, y) {
-// //     var sum = x + y;
-// //     console.log(sum);
-// // }
-// // add(10, 10);
-// const add = (x, y) => {
-//     let sum = x + y;
-//     console.log(sum);
-// };
-// add(10, 10);
+//Arrow function
+
+function add(x, y) {
+    var sum = x + y;
+    console.log(sum);
+}
+add(10, 10);
+const add = (x, y) => {
+    let sum = x + y;
+    console.log(sum);
+};
+add(10, 10);
 
 /**
  * ES6 features
