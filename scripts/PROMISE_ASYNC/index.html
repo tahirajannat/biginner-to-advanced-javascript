@@ -8,8 +8,56 @@
     <body>
         <button>clicked</button>
 
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+        >
+            <!-- Outer Circle -->
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#00ff00"
+                stroke-width="5"
+                fill="none"
+                id="outer-circle"
+            >
+                <animate
+                    attributeName="stroke-dasharray"
+                    values="0 251.32741228718345; 251.32741228718345 0"
+                    dur="1s"
+                    repeatCount="1"
+                />
+                <animate
+                    attributeName="stroke-dashoffset"
+                    values="0 -251.32741228718345; -251.32741228718345 0"
+                    dur="1s"
+                    repeatCount="1"
+                />
+            </circle>
+
+            <!-- Checkmark Path -->
+            <path
+                fill="none"
+                stroke="#00ff00"
+                stroke-width="5"
+                d="M20 50 l15 15 l30 -30"
+                id="checkmark"
+            >
+                <animate
+                    attributeName="stroke-dasharray"
+                    values="0 100;100 0"
+                    dur="2s"
+                    fill="freeze"
+                />
+            </path>
+        </svg>
+
         <script src="./index.js"></script>
         <script src="./index2.js"></script>
         <script src="./promise.js"></script>
+        <script src="./promise2.js"></script>
     </body>
 </html>
