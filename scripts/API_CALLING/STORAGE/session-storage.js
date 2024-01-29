@@ -14,6 +14,6 @@ sessionStorage.clear();
 const user = { id: 1, name: 'tahira' };
 sessionStorage.setItem('user', JSON.stringify(user));
 
-console.log(
-    sessionStorage.getItem('user', JSON.parse(localStorage.getItem('user')))
-);
+// console.log(
+//     sessionStorage.getItem('user', JSON.parse(localStorage.getItem('user')))
+// );
