@@ -1,3 +1,7 @@
+// localStorage vs sessionStorage
+// 10mb va 5mb
+// permannet vs session(tab)
+
 // sessionStorage.setItem('user1', 'Tahira');
 // sessionStorage.setItem('user2', 'jannat');
 

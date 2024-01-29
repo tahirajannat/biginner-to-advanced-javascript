@@ -34,7 +34,3 @@ localStorage.setItem('password', '123456');
 const country = JSON.parse(localStorage.getItem('countries'));
 console.log(country);
 localStorage.clear();
-
-// localStorage vs sessionStorage
-// 10mb va 5mb
-// permannet vs session(tab)
