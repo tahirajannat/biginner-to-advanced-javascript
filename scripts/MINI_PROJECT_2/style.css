@@ -32,3 +32,13 @@ h1 {
 }
 
 /* posts style end   */
+
+#mouseTarget {
+    box-sizing: border-box;
+    width: 15rem;
+    border: 1px solid #333;
+}
+
+span {
+    display: block;
+}
