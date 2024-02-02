@@ -1,0 +1,120 @@
+/* reset code starts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 30%;
+    height: 80vh;
+    background-color: #222;
+    color: white;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) inset;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    overflow: scroll;
+}
+.card-body {
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+input {
+    border: none;
+    border-radius: 0.2rem;
+    width: 80%;
+    padding: 0.5rem 1rem;
+}
+.btn {
+    border: none;
+    border: 0.1rem solid rgb(166, 136, 2);
+    border-radius: 0.2rem;
+    padding: 0.4rem 1rem;
+    background-color: rgb(255, 208, 0);
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.01rem;
+    width: 20%;
+}
+.btn:hover {
+    background-color: white;
+    transition: all 0.3s;
+    color: rgb(6, 93, 199);
+    border-color: rgb(6, 93, 199);
+}
+#deleteButton {
+    width: auto;
+    padding: 0.24rem 0.5rem;
+    border-radius: 100%;
+    background-color: #f9f9f9;
+    color: rgb(255, 140, 0);
+    border-color: rgb(255, 140, 0);
+}
+#deleteButton:hover {
+    background-color: rgb(255, 140, 0);
+    transition: all 0.3s;
+    color: #f9f9f9;
+    border-color: #f9f9f9;
+}
+ul {
+    /* width: 100%;
+    display: flex;
+    justify-content: space-between; */
+}
+ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    margin: 1rem 0;
+}
+ul li:hover {
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+.bg-success {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: #000;
+    background-color: #ddffdd;
+    border-left: 6px solid #04aa6d;
+}
+.bg-danger {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: #000;
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+}
