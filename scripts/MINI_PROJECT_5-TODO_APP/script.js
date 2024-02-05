@@ -20,17 +20,6 @@ const showMessage = (text, status) => {
         messageElement.classList.remove(`bg-${status}`);
     }, 1000);
 };
-//create todo
-const createTodo = (todoId, todoValue) => {
-    const todoElement = document.createElement('li');
-    todoElement.id = todoId;
-    todoElement.innerHTML = `<span> ${todoValue} </span> <span> <button class='btn' id='deleteButton'><i class="far fa-trash-alt"></i>
-</button> </span>`;
-
-    todoLists.appendChild(todoElement);
-    const deleteButton = document.getElementById('deleteButton');
-    deleteButton.addEventListener('click', handleDeleteTodo);
-};
 
 // event Function
 const handleAddTodo = (event) => {
@@ -48,33 +37,42 @@ const handleAddTodo = (event) => {
     todoInput.value = '';
 };
 
-//deletet todo list
-// const handleDeleteTodo = (event) => {
-//     const selectedTodo = event.target.parentElement.parentElement;
-//     console.log(selectedTodo);
-//     todoLists.removeChild(selectedTodo);
-//     showMessage('Your todo has been deleted', 'danger');
+//create todo
+const createTodo = (todoId, todoValue) => {
+    const todoElement = document.createElement('li');
+    todoElement.id = todoId;
+    todoElement.innerHTML = `
+        <span>${todoValue}</span>
+        <span>
+            <button class='btn deleteButton' data-todo-id='${todoId}'>
+                <i class="far fa-trash-alt"></i>
+            </button>
+        </span>`;
 
-//     let todos = getTodosFromLocalStorage();
-//     todos = todos.filter((todo) => todo.todoId !== selectedTodo.id);
-//     localStorage.setItem('todoItem', JSON.stringify(todos));
-//     console.log('clicked delete');
-// };
+    todoLists.appendChild(todoElement);
+};
 
-const handleDeleteTodo = (event) => {
-    const selectedTodo = event.target.closest('li');
-
+const handleDeleteTodo = (todoId) => {
+    const selectedTodo = document.getElementById(todoId);
     if (selectedTodo) {
-        let todos = getTodosFromLocalStorage();
-        todos = todos.filter((todo) => todo.todoId !== selectedTodo.id);
-        localStorage.setItem('todoItem', JSON.stringify(todos));
-
-        selectedTodo.parentElement.removeChild(selectedTodo);
+        todoLists.removeChild(selectedTodo);
         showMessage('Your todo has been deleted', 'danger');
-    } else {
-        console.error('Error: Unable to find the parent "li" element.');
+
+        let todos = getTodosFromLocalStorage();
+        todos = todos.filter((todo) => todo.todoId !== todoId);
+        localStorage.setItem('todoItem', JSON.stringify(todos));
     }
 };
+
+// Event delegation for delete buttons
+todoLists.addEventListener('click', (event) => {
+    if (event.target.classList.contains('deleteButton')) {
+        const todoId = event.target.getAttribute('data-todo-id');
+        handleDeleteTodo(todoId);
+    }
+});
+
+// ...
 
 //loadtodos
 const loadTodos = () => {

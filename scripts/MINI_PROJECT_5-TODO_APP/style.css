@@ -70,15 +70,15 @@ input {
     color: rgb(6, 93, 199);
     border-color: rgb(6, 93, 199);
 }
-#deleteButton {
+.deleteButton {
     width: auto;
-    padding: 0.24rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 100%;
     background-color: #f9f9f9;
     color: rgb(255, 140, 0);
     border-color: rgb(255, 140, 0);
 }
-#deleteButton:hover {
+.deleteButton:hover {
     background-color: rgb(255, 140, 0);
     transition: all 0.3s;
     color: #f9f9f9;
